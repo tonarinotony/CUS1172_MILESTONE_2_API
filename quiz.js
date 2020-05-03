@@ -16,8 +16,8 @@ router.get('/:quizid', (req,res) => {
 router.get('/:quizid/:questionid', (req,res) => {
 	var ques_id = req.params['questionid'];
 	var quiz_id = req.params['quizid'];
-	quiz_with_id = quiz_data["results"].filter(q => q.quizId == quiz_id)
-	ques_with_id = quiz_data["results"][1].questions.filter(q=>q.data.id == ques_id)
+	let i = quiz_data["results"].findIndex(q => q.quizId == quiz_id)
+	ques_with_id = quiz_data["results"][i].questions.filter(q=>q.data.id == ques_id)
 	res.json(ques_with_id)
 });
 
