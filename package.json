@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tonarinotony/CUS1172_MILESTONE_2_API/issues"
   },
-  "homepage": "https://github.com/tonarinotony/CUS1172_MILESTONE_2_API#readme"
+  "homepage": "https://github.com/tonarinotony/CUS1172_MILESTONE_2_API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
