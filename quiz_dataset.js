@@ -1,12 +1,12 @@
 const list = {
 	list:
 	[{
-		"quizId": "1",
+		"quizId": 1,
 		"title" : "quiz 1",
 		"description" : "One of two available Quizzes"
 	},
 	{
-		"quizId": "2",
+		"quizId": 2,
 		"title" : "quiz 2",
 		"description" : "One of two available Quizzes"
 	}
@@ -15,13 +15,15 @@ const list = {
 const quiz = {
 	results: [{
 		"quizId": 1,
+		"title" : "quiz 1",
+		"description" : "One of two available Quizzes",
 		"questions":[
 			{
 				"data":{
-				"id": 100,
-				"question_type" : "mc",
-				"question" : "What is 1+1",
-				"answer_options" : ["1","2","3","4"]
+					"id": 100,
+					"question_type" : "mc",
+					"question" : "What is 1+1",
+					"answer_options" : ["1","2","3","4"]
 				},
 				"meta" :{
 					"next_question": 101
@@ -29,10 +31,10 @@ const quiz = {
 			},
 			{
 				"data":{
-				"id": 101,
-				"question_type" : "mc",
-				"question" : "What is 1+1",
-				"answer_options" : ["1","2","3","5"]
+					"id": 101,
+					"question_type" : "mc",
+					"question" : "What is 1+1",
+					"answer_options" : ["1","2","3","5"]
 				},
 				"meta" :{
 					"next_question": 102
@@ -42,13 +44,15 @@ const quiz = {
 	},
 	{
 		"quizId": 2,
+		"title" : "quiz 1",
+		"description" : "One of two available Quizzes",
 		"questions":[
 			{
 				"data":{
-				"id": 200,
-				"question_type" : "mc",
-				"question" : "What is 1+1",
-				"answer_options" : ["1","2","3","4"]
+					"id": 200,
+					"question_type" : "mc",
+					"question" : "What is 1+1",
+					"answer_options" : ["1","2","3","4"]
 				},
 				"meta" :{
 					"next_question": 201
@@ -56,10 +60,10 @@ const quiz = {
 			},
 			{
 				"data":{
-				"id": 201,
-				"question_type" : "mc",
-				"question" : "What is 1+1",
-				"answer_options" : ["1","2","3","5"]
+					"id": 201,
+					"question_type" : "mc",
+					"question" : "What is 1+1",
+					"answer_options" : ["1","2","3","5"]
 				},
 				"meta" :{
 					"next_question": 202

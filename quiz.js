@@ -14,7 +14,11 @@ router.get('/:quizid', (req,res) => {
 });
 
 router.get('/:quizid/:questionid', (req,res) => {
-	res.send('<h2>questionid ID</h2>');
+	var ques_id = req.params['questionid'];
+	var quiz_id = req.params['quizid'];
+	quiz_with_id = quiz_data["results"].filter(q => q.quizId == quiz_id)
+	ques_with_id = json(quiz_with_id).filter(q => q.id == ques_id)
+	res.json(ques_with_id)
 });
 
 router.get('/check_answer/:quizid/:questionid/:answer', (req,res) => {
