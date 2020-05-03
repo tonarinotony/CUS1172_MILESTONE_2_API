@@ -17,7 +17,7 @@ router.get('/:quizid/:questionid', (req,res) => {
 	var ques_id = req.params['questionid'];
 	var quiz_id = req.params['quizid'];
 	quiz_with_id = quiz_data["results"].filter(q => q.quizId == quiz_id)
-	ques_with_id = json(quiz_with_id).filter(q => q.id == ques_id)
+	ques_with_id = quiz_data["results"][1].questions.filter(q=>q.data.id == ques_id)
 	res.json(ques_with_id)
 });
 
