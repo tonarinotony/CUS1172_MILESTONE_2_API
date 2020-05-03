@@ -22,7 +22,17 @@ router.get('/:quizid/:questionid', (req,res) => {
 });
 
 router.get('/check_answer/:quizid/:questionid/:answer', (req,res) => {
-	res.send('<h2>answer ID</h2>');
+	var ques_id = req.params['questionid'];
+	var quiz_id = req.params['quizid'];
+	var user_answer = req.params['answer']
+	let i = quiz_data["results"].findIndex(q => q.quizId == quiz_id)
+	ques_with_id = quiz_data["results"][i].questions.filter(q=>q.data.id == ques_id)
+	if(ques_with_id[0].data.answer == user_answer){
+		console.log("its right")
+	}
+	else{
+		console.log("its wrong")
+	}
 });
 
 module.exports = router
