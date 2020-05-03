@@ -24,8 +24,8 @@ const quiz = {
 					"question_type" : "mc",
 					"question" : "What is 1+1",
 					"answer_options" : ["1","2","3","4"],
-					"answer" : 2
-					
+					"answer" : 2,
+					"help" : "HELPING"			
 				},
 				"meta" :{
 					"next_question": 101

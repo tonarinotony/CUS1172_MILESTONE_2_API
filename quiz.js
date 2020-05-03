@@ -28,10 +28,21 @@ router.get('/check_answer/:quizid/:questionid/:answer', (req,res) => {
 	let i = quiz_data["results"].findIndex(q => q.quizId == quiz_id)
 	ques_with_id = quiz_data["results"][i].questions.filter(q=>q.data.id == ques_id)
 	if(ques_with_id[0].data.answer == user_answer){
-		console.log("its right")
+		var results = {
+			"question_id" : ques_id,
+			"user_answer" : user_answer,
+			"correct" : true
+		}
+		res.json(results)
 	}
 	else{
-		console.log("its wrong")
+		var results = {
+			"question_id" : ques_id,
+			"user_answer" : user_answer,
+			"correct" : false,
+			"feedback" : ques_with_id[0].data.help
+		}
+		res.json(results)
 	}
 });
 
