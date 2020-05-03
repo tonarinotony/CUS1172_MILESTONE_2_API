@@ -24,7 +24,7 @@ const quiz = {
 					"question_type" : "mc",
 					"question" : "What is 1+1",
 					"answer_options" : ["1","2","3","4"],
-					"answer" : 2,
+					"answer" : 1,
 					"help" : "HELPING"			
 				},
 				"meta" :{
@@ -35,8 +35,8 @@ const quiz = {
 				"data":{
 					"id": 101,
 					"question_type" : "mc",
-					"question" : "What is 1+1",
-					"answer_options" : ["1","2","3","5"]
+					"question" : "What is 2+2",
+					"answer_options" : ["1","2","3","4"]
 				},
 				"meta" :{
 					"next_question": 102
@@ -53,8 +53,8 @@ const quiz = {
 				"data":{
 					"id": 200,
 					"question_type" : "mc",
-					"question" : "What is 1+1",
-					"answer_options" : ["1","2","3","4"]
+					"question" : "What is 4+4",
+					"answer_options" : ["1","2","3","8"]
 				},
 				"meta" :{
 					"next_question": 201
@@ -64,8 +64,8 @@ const quiz = {
 				"data":{
 					"id": 201,
 					"question_type" : "mc",
-					"question" : "What is 1+1",
-					"answer_options" : ["1","2","3","5"]
+					"question" : "What is 3+3",
+					"answer_options" : ["1","2","6","5"]
 				},
 				"meta" :{
 					"next_question": 202
