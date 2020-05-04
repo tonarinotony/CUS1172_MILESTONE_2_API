@@ -169,7 +169,7 @@ const quiz = {
 					"question_type":"mc",
 					"help": "12 sections you can divide up",
 					"picture":"",
-					"answer" : 1,
+					"answer" : 0,
 					"answer_options": ["12","9","15","24"]
 				},
 				"meta" :{
@@ -293,28 +293,295 @@ const quiz = {
 		"title" : "quiz 1",
 		"description" : "One of two available Quizzes",
 		"questions":[
-			{
+				{
 				"data":{
-					"id": 200,
-					"question_type" : "mc",
-					"question" : "What is 4+4",
-					"answer_options" : ["1","2","3","8"]
+					"id" : 100
+					"question": "What programming language is this",
+					"question_type":"mc",
+					"help": "This syntax is Java",
+					"picture": "https://tonarinotony.github.io/questionJSON/question4.PNG",
+					"answer" : 0,
+					"answer_options": ["Java","Python","C++","C#"]
+					},
+					"meta" :{
+						"next_question" : 101
+					}
+
 				},
-				"meta" :{
-					"next_question": 201
-				}
-			},
-			{
-				"data":{
-					"id": 201,
-					"question_type" : "mc",
-					"question" : "What is 3+3",
-					"answer_options" : ["1","2","6","5"]
+
+				{
+				"data":
+					{
+						"id" : 101
+						"question": "What programming language is this",
+						"question_type":"mc",
+						"help": "This syntax is Python",
+						"picture": "https://tonarinotony.github.io/questionJSON/question5.PNG",
+						"answer" : 1,
+						"answer_options": ["Java","Python","C++","C#"]
+					},
+					"meta" :{
+						"next_question" : 102
+					}
 				},
-				"meta" :{
-					"next_question": 202
+				{
+				"data":
+					{
+						"id" : 102
+						"question": "What programming language is this",
+						"question_type":"mc",
+						"help": "This syntax is C++",
+						"picture": "https://tonarinotony.github.io/questionJSON/question6.PNG",
+						"answer" : 2,
+						"answer_options": ["Java","Python","C++","C#"]
+					},
+					"meta" :{
+						"next_question" : 103
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 103
+						"question": "Which of these is not a way to initiate a variable in Javascript",
+						"question_type":"mc",
+						"help": "var, const and let are all ways to initiate a variable in Javascript",
+						"picture": "",
+						"answer" : 2,
+						"answer_options": ["var","const","int","let"]
+					},
+					"meta" :{
+						"next_question" : 104
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 104
+						"question": "Which one of these is not a primitive variable in Java",
+						"question_type":"mc",
+						"help": "String refers to an object therefore is not a primitive question_type",
+						"picture": "",
+						"answer" : 1,
+						"answer_options": ["int","String","char","double"]
+					},
+					"meta" :{
+						"next_question" : 105
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 105
+						"question": "Which programming paradigm is most closely related to Java",
+						"question_type":"mc",
+						"help": "Object Oriented Programming",
+						"picture": "",
+						"answer" : 0,
+						"answer_options": ["Object Oriented Programming","Procedural Programming","Functional Programming","Logic Programming"]
+					},
+					"meta" :{
+						"next_question" : 106
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 106
+						"question": "Which one of these is not a programming language",
+						"question_type":"mc",
+						"help": "HTML is a Markup language",
+						"picture": "",
+						"answer" : 1,
+						"answer_options": ["Java","HTML","Scheme","Ruby"]
+					},
+					"meta" :{
+						"next_question" : 107
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 107
+						"question": "Abstract classes are ...",
+						"question_type":"mc",
+						"help": "Abstract classes are accessed with keyword extends, and cannot have implementation or static and final modifiers. They can have declaration however",
+						"picture": "",
+						"answer" : 1,
+						"answer_options": ["allowed to have implementation","allowed to have declaration","allowed to have static modifiers","accessed using keyword implements"]
+					},
+					"meta" :{
+						"next_question" : 108
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 108
+						"question": "What is the primitive question_type to store True or False values in Java",
+						"help": "boolean is the primitive question_type",
+						"question_type":"fillIn",
+						"answer" : "boolean"
+					},
+					"meta" :{
+						"next_question" : 109
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 109
+						"question": "What is the method converting an object to a String in Java",
+						"help": "toString() is the method",
+						"question_type":"fillIn",
+						"answer" : "toString()"
+					},
+					"meta" :{
+						"next_question" : 110
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 110
+						"question": "How do you get the length of an array",
+						"help": "length is a property of arrays you can access, array.length to access",
+						"question_type":"fillIn",
+						"answer" : "array.length"
+					},
+					"meta" :{
+						"next_question" : 111
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 111
+						"question": "How do you get the length of an ArrayList",
+						"help": "ArrayList have a size method so to access length you use size()",
+						"question_type":"fillIn",
+						"answer" : "size()"
+					},
+					"meta" :{
+						"next_question" : 112
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 112
+						"question": "How do you add to the end of an ArrayList",
+						"help": "ArrayList have an add method so to access length you use add()",
+						"question_type":"fillIn",
+						"answer" : "add()"
+					},
+					"meta" :{
+						"next_question" : 113
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 113
+						"question": "Which one of these is proper syntax for creating an Object in Java",
+						"question_type":"mc",
+						"help": "Object name = new Object(); is the proper syntax",
+						"picture": "",
+						"answer" : 0,
+						"answer_options":["Object name = new Object();","name = new Object();","new Object = name;","name = Object()"]
+					},
+					"meta" :{
+						"next_question" : 114
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 114
+						"question": "Which one of these is proper syntax for creating an Object in Python",
+						"question_type":"mc",
+						"help": "name = Object() is the proper syntax",
+						"picture": "",
+						"answer" : 3,
+						"answer_options": ["Object name = new Object();","name = new Object();","new Object = name;","name = Object()"]
+					},
+					"meta" :{
+						"next_question" : 115
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 115
+						"question": "Which one of these is not a valid way to write the String foo'bar in Python",
+						"question_type":"mc",
+						"help": "\\ cancels out the action of the following character, surrounding single quotes with double quotes and vice versa allows you to see the other, triple quotes allow strings to span multiple lines",
+						"picture": "",
+						"answer" : 3,
+						"answer_options": ["\"\"\"foo'bar\"\"\"","\"foo'bar\"","'foo\\'bar'","'foo'bar'"]
+					},
+					"meta" :{
+						"next_question" : 116
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 116
+						"question": "Which of the following is not a Python built-in function",
+						"question_type":"mc",
+						"help": "diff() is not a built in function",
+						"picture": "",
+						"answer" : 0,
+						"answer_options": ["diff()","round()","repr()","map())"]
+					},
+					"meta" :{
+						"next_question" : 117
+				},
+				{
+				"data":
+					{
+						"id" : 117
+						"question": "Which of these is a function defined using Function Declarations in Javascript",
+						"question_type":"mc",
+						"help": "function print(){console.log('hello')} is a JS Function Declaration",
+						"picture": "",
+						"answer" : 0,
+						"answer_options": ["function print(){console.log('hello')}","const print = function(){console.log('hello')}","const print = () => {console.log('hello')}","const print() => {console.log('hello')}"]
+					},
+					"meta" :{
+						"next_question" : 118
+				},
+				{
+				"data":
+					{
+						"id" : 118
+						"question": "Which of these is a function defined using Function Expression in Javascript",
+						"question_type":"mc",
+						"help": "const print = function(){console.log('hello')} is a Function Expression in JS",
+						"picture": "",
+						"answer" : 1,
+						"answer_options": ["function print(){console.log('hello')}","const print = function(){console.log('hello')}", "const print = () => {console.log('hello')}","const print() => {console.log('hello')}"]
+					},
+					"meta" :{
+						"next_question" : 119
+					}
+				},
+				{
+				"data":
+					{
+						"id" : 119
+						"question": "Which of these is a function defined using Arrow Function in Javascript",
+						"question_type":"mc",
+						"help": "const print = () => {console.log('hello')} is a JS arrow function ",
+						"picture": "",
+						"answer" : 2,
+						"answer_options": ["function print(){console.log('hello')}","const print = function(){console.log('hello')}","const print = () => {console.log('hello')}","const print() => {console.log('hello')}"]
+					},
+					"meta" :{
+						"next_question" : -1
+					}
 				}
-			}
 		]
 	}
 
