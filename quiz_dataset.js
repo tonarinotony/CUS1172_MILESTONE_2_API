@@ -305,7 +305,7 @@ const quiz = {
 	{
 
 		"quizId": 2,
-		"title" : "quiz 1",
+		"title" : "quiz 2",
 		"description" : "One of two available Quizzes",
 		"questions":[
 				{
@@ -640,7 +640,7 @@ const quiz = {
 				"meta" :{
 					"next_question" : 8000231
 				}
-			}
+			},
 			{
 				"data":{
 					"id" : 8000231,
