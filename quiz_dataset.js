@@ -26,7 +26,7 @@ const quiz = {
 					"question_type":"imageMC",
 					"help": "inline styling, is when you style directly on the HTML element, Don't use it too often, it isn't very flexible and clutters your code",
 					"answer" : 0,
-					"answer_options": ["https://tonarinotony.github.io/questionJSON/answer_optionsTYLE1.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE2.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE3.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE4.PNG"]
+					"answer_options": ["https://tonarinotony.github.io/questionJSON/answerSTYLE1.PNG","https://tonarinotony.github.io/questionJSON/answerSTYLE1.PNG","https://tonarinotony.github.io/questionJSON/answerSTYLE1.PNG","https://tonarinotony.github.io/questionJSON/answerSTYLE1.PNG"]
 				},
 				"meta" :{
 					"next_question" : 101
@@ -272,7 +272,7 @@ const quiz = {
 			},
 			{
 				"data":{
-					"id" : 120,
+					"id" : 119,
 					"question": "Is this json formatted correctly?",
 					"question_type":"mc",
 					"help": "No the json needs quotations around each element and commas separating each element",
