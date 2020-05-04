@@ -28,6 +28,9 @@ const quiz = {
 					"answer" : 0,
 					"answer_options": ["https://tonarinotony.github.io/questionJSON/answer_optionsTYLE1.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE2.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE3.PNG","https://tonarinotony.github.io/questionJSON/answer_optionsTYLE4.PNG"]
 				}
+				"meta"{
+					"next_question" : 101
+				}
 			},
 			{
 				"data":{
