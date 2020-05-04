@@ -600,6 +600,61 @@ const quiz = {
 					}
 				}
 		]
+	},
+	{
+	"quizId": 3,
+		"title" : "quiz 3",
+		"description" : "Fake Test",
+		"questions":
+		[
+			{
+				"data":{
+					"id" : 100,
+					"question": "Fake Test 1",
+					"question_type":"mc",
+					"help": "no help",
+					"answer" : 0,
+					"answer_options": ["Hello","It","Is","I"]
+				},
+				"meta" :{
+					"next_question" : -1
+				}
+			}
+		]
+	},
+	{
+	"quizId": 4,
+		"title" : "quiz 4",
+		"description" : "Fake Test",
+		"questions":
+		[
+			{
+				"data":{
+					"id" : 400,
+					"question": "Fake Test 2",
+					"question_type":"mc",
+					"help": "inline styling, is when you style directly on the HTML element, Don't use it too often, it isn't very flexible and clutters your code",
+					"answer" : 0,
+					"answer_options": ["Random","Numbers","Work","Too"]
+				},
+				"meta" :{
+					"next_question" : 8000231
+				}
+			}
+			{
+				"data":{
+					"id" : 8000231,
+					"question": "Fake Test 2",
+					"question_type":"mc",
+					"help": "inline styling, is when you style directly on the HTML element, Don't use it too often, it isn't very flexible and clutters your code",
+					"answer" : 0,
+					"answer_options": ["Random","Numbers","Work","Too"]
+				},
+				"meta" :{
+					"next_question" : -1
+				}
+			}
+		]
 	}
 
 	]
