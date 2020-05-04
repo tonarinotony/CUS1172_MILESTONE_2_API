@@ -2,14 +2,29 @@ const list = {
 	list:
 	[{
 		"quizId": 1,
+		"first" : 100,
 		"title" : "quiz 1",
 		"description" : "One of two available Quizzes"
 	},
 	{
 		"quizId": 2,
+		"first" : 100,
 		"title" : "quiz 2",
 		"description" : "One of two available Quizzes"
+	},
+	{
+		"quizId": 3,
+		"first" : 100,
+		"title" : "quiz 3",
+		"description" : "Defunk Quiz"
+	},
+	{
+		"quizId": 4,
+		"first" : 400,
+		"title" : "quiz 4",
+		"description" : "Test Quiz"
 	}
+
 	]
 }
 const quiz = {
